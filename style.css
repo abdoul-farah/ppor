@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --darkBlue:hsl(243, 87%, 12%);
+    --desaBlue: hsl(238, 22%, 44%);
+    --brBlue: hsl(224, 93%, 58%);
+    --mCyan: hsl(170, 45%, 43%);
+    --liBlue: hsl(240, 75%, 98%);
+    --liGray: hsl(0, 0%, 75%);
+    --ff: 'Raleway', sans-serif;
+}
+
+body{
+    font-family: var(--ff);
+}
+.header{
+    height: 100px;
+    /* background-color:var(--desaBlue); */
+}
+
+
+.card{
+   
+    
+    /* border: 1px solid black; */
+   
+}
+
+.container{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px 250px 250px;
+    grid-gap: 0px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.top1, .top2{
+
+    margin-bottom: 200px;
+}
+
+.mi1{
+    background-color: #F8F8FE;
+}
+
+.mi2{
+    background-color: #F8F8FE;
+}
+
+.bt1{
+    background-color: rgb(27, 213, 117);
+}
+
+.bt2{
+    background-color: rgb(7, 130, 67);
+}
+
+.ft1{
+    background-color: rgb(213, 27, 154);
+}
+
+
+.ft2{
+    background-color: rgb(155, 9, 109);
+}
+
+
+@media  screen and (max-width: 600px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 500px 500px 250px 250px 250px 250px;
+    }
+    
+}
+
+
+.top2 img{
+   width: 100%;
+   height: 100%;
+ object-fit: contain;
+ padding: 10px;
+
+
+}
+
+.top1 {
+    line-height: 1.2;
+    padding: 15px;
+    
+
+    
+}
+
+.top1 h1{
+margin-bottom: 1rem;
+}
+
+
+.top1 input[type=email]{
+    margin: 10px 0;
+    width: 60%;
+    height: 30px;
+    color: var(--liGray);
+    border: 1px solid var(--liGray);
+    padding: 5px;
+    box-shadow: var(--liGray) 1.95px 1.95px 2.6px;
+
+}
+
+.top1 input[type=submit]{
+    width: 30%;
+    height: 30px;
+    color: white;
+    background-color: var(--brBlue);
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    cursor: pointer;
+}
+
+
+
+.header{
+    background-image: url(images/bg-curve-desktop.svg) cover;
+    background-size: 100%;
+    position: relative;
+    top: 500px;
+    width: 100%;
+    
+    background-repeat: no-repeat;
+
+    
+    
+}
